@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="120,82">
+  <Font id="0" name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <VerticalLayout bkimage="file='menu_bk.png' corner='40,8,8,8'" hole="false">
+    <List header="hidden" inset="8,8,8,8" itemhotimage="file='menu_hot_bk.png' corner='2,2,2,2'" itemdisabledbkcolor="#FF0000FF">
+      <ListContainerElement name="menuItem_Mute" height="22" inset="40,0,0,0">
+        <Label text="静音" mouse="false"/>
+      </ListContainerElement>
+
+      <ListContainerElement name="menuItem_UnMute" height="22" inset="40,0,0,0">
+        <Label text="解除静音" mouse="false"/>
+      </ListContainerElement>
+
+      <ListContainerElement name="menuItem_SetHost" height="22" inset="40,0,0,0">
+        <Label text="设为主持人" mouse="false"/>
+      </ListContainerElement>
+
+      <ListContainerElement name="menuItem_CloseVideo" height="22" inset="40,0,0,0">
+        <Label text="关闭视频" mouse="false"/>
+      </ListContainerElement>
+
+      <ListContainerElement name="menuItem_OpenVideo" height="22" inset="40,0,0,0">
+        <Label text="打开视频" mouse="false"/>
+      </ListContainerElement>
+    </List>
+  </VerticalLayout>
+</Window>

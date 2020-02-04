@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="640,630" caption="0,0,0,40" roundcorner="10,10,10,10" shadowdarkness="27" shadowsize="3" showshadow="true" shadowcolor="0xFF0C0306">
+  <Font id="0" name="微软雅黑" size="14" bold="true" />
+  <Font id="1" name="微软雅黑" size="14"  default="true"/>
+  <Font id="2" name="微软雅黑" size="12"  />
+  <Font id="3" name="微软雅黑" size="18" bold="true"/>
+  <VerticalLayout bkcolor="0xFFFFFFFF">
+
+    <!-- 标题栏 -->
+    <HorizontalLayout height="40" bkcolor="0xFFf4f4f4">
+      <HorizontalLayout padding="0,6,0,0">
+        <Label width="600" height="15"  endellipsis="true" align="center"  text="云视讯" textcolor="0xFF152d39" />
+      </HorizontalLayout>
+      <HorizontalLayout width="50" padding="0,6,0,0">
+        <Button name="btn_min" tooltip="最小化" width="22" height="22"
+                normalimage="file='img\login_minimize_normal.png'" hotimage="file='img\login_minimize_normal-04.png'" />
+
+        <Button name="btn_close" tooltip="关闭" width="22" height="22"
+                normalimage="file='img\login_close_normal.png'"  hotimage="file='img\login_close_normal-05.png'" />
+      </HorizontalLayout>
+    </HorizontalLayout>
+
+    <VerticalLayout height="550">
+
+      <VerticalLayout name="layout_KeyInfo"  padding="120,10,0,0" visible="false">
+
+        <Label text="云视讯" height="20" width="280" endellipsis="true" padding="40,20,0,10" font="3" align="center" textcolor="0xFF000000" />
+
+        <HorizontalLayout height="50" width="400" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE" visible="false">
+          <Label height="20" width="90" padding="0,18,0,0" align="left" text="App Key:"  textcolor="0xFF000000" />
+          <Edit name="edit_AppKey" padding="0,18,0,0" width="300" height="30" text="CDxp0JymWh0j0H2EkOat88m69cfxbcWJytLV"  maxchar="60" />
+        </HorizontalLayout>
+
+        <HorizontalLayout  height="50" width="400" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE" visible="false">
+          <Label height="20" width="90" padding="0,18,0,0" align="left" text="App Secret:" textcolor="0xFF000000" />
+          <Edit name="edit_AppSecret"  padding="0,18,0,0" width="300" height="30" text="Sc0kQUDPrHYcmLMIuz8hKwCnpGwdeeoD127v"  maxchar="60"  />
+        </HorizontalLayout>
+
+        <HorizontalLayout height="50" width="400" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE" visible="false">
+          <Label height="20" width="90" padding="0,18,0,0" align="left" text="Api Key:"  textcolor="0xFF000000" />
+          <Edit name="edit_ApiKey" padding="0,18,0,0" width="300" height="30" text="35C671E7221B451AB833236FA050A0CB"   maxchar="60" />
+        </HorizontalLayout>
+
+        <HorizontalLayout  height="50" width="400" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE" visible="false">
+          <Label height="20" width="90" padding="0,18,0,0" align="left" text="Api Secret:" textcolor="0xFF000000" />
+          <Edit name="edit_ApiSecret"  padding="0,18,0,0" width="300" height="30" text="8540A8C27D884C4085E29AA39417E2DE"  maxchar="60" />
+        </HorizontalLayout>
+
+        <Button name="btn_Setting" text="初始化" font="2" width="300" height="40" padding="90,18,0,0" textcolor="#FFFFFFFF"
+              normalimage="file='img\btn_normal.png'"
+              hotimage="file='img\btn_hover.png'"
+              pushedimage="file='img\btn_normal.png'"/>
+
+      </VerticalLayout>
+
+      <VerticalLayout name="layout_Login"  padding="200,10,0,0" visible="false">
+
+        <Label text="云视讯" height="20" width="280" endellipsis="true" padding="0,50,0,10" font="3" align="center" textcolor="0xFF000000" />
+
+        
+        <HorizontalLayout height="50" width="280" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Text height="20" width="70" padding="0,18,0,0" align="left" text="手机号码:"  textcolor="0xFF000000" />
+          <Edit name="edit_UserName" text="15069106038" padding="0,18,0,0" width="200" height="30"  maxchar="11" />
+        </HorizontalLayout>
+
+        <HorizontalLayout height="50" width="280" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Label height="20" width="70" padding="0,18,0,0" align="left" text="密      码:" textcolor="0xFF000000" />
+          <Edit name="edit_Password" text="JTud3991" padding="0,18,0,0" width="200" height="30"  maxchar="20" password="true" />
+        </HorizontalLayout>
+
+       
+        <HorizontalLayout height="50" width="280" padding="0,8,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE" visible="false">
+          <Label height="20" width="70" padding="0,18,0,0" align="left" text="Token登录:" textcolor="0xFF000000" />
+          <Edit name="edit_Token" text="" padding="0,18,0,0" width="200" height="30"  maxchar="500" />
+        </HorizontalLayout>
+       
+        
+        
+        <Button name="btn_Login" text="登    录" font="3" width="200" height="40" padding="40,18,0,0" textcolor="#FFFFFFFF"
+              normalimage="file='img\btn_normal.png'"
+              hotimage="file='img\btn_hover.png'"
+              pushedimage="file='img\btn_normal.png'"/>
+
+
+
+
+      </VerticalLayout>
+
+      <VerticalLayout name="layout_Meeting"  padding="110,10,0,0" height="550" visible="false">
+        <HorizontalLayout height="50" width="400" padding="0,0,0,0" >
+          <Label height="20" width="150" padding="0,18,0,0" align="left"  text="当前用户:"   textcolor="0xFF000000" />
+          <Label height="20" width="130" padding="0,18,0,0" align="left" name="lbl_UserName" textcolor="0xFF000000" />
+        </HorizontalLayout>
+
+        <!--
+        <HorizontalLayout height="50" width="400" padding="0,4,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Label height="20" width="150" padding="0,18,0,0" align="left" text="会议Id(高清会填写):"  textcolor="0xFF000000" />
+          <Edit name="edit_MeetingId" padding="0,18,0,0" width="130" height="30" maxchar="40" />
+        </HorizontalLayout>
+        -->
+
+        <HorizontalLayout height="50" width="400" padding="0,4,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Label height="20" width="150" padding="0,18,0,0" align="left" text="会议主题:"  textcolor="0xFF000000" />
+          <Edit name="edit_MeetingTopic" padding="0,18,0,0" width="130" height="30" maxchar="12" />
+        </HorizontalLayout>
+
+        <HorizontalLayout height="50" width="400" padding="0,4,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Label height="20" width="150" padding="0,18,0,0" align="left" text="参与人:"  textcolor="0xFF000000" />
+          <Edit name="edit_Users" padding="0,18,0,0" width="130" height="30" maxchar="500" />
+        </HorizontalLayout>
+
+        <HorizontalLayout height="50" width="400" padding="100,10,0,0" bordersize="0,0,0,0" borderstyle="0" bordercolor="0xFFEEEEEE">
+
+          <Button name="btn_StartInstanceMeeting" text="启动即时会议" tooltip="输入会议主题和参与人id(可选)" font="2" width="100" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+           normalimage="file='img\btn_normal.png'"
+           hotimage="file='img\btn_hover.png'"
+           pushedimage="file='img\btn_normal.png'"/>
+
+        </HorizontalLayout>
+        <HorizontalLayout height="50" width="400" padding="0,4,0,0" bordersize="0,0,0,1" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <Label height="20" width="150" padding="0,18,0,0" align="left" text="会议号码:"  textcolor="0xFF000000" />
+          <Edit name="edit_MeetingNo" padding="0,18,0,0" width="130" height="30" maxchar="12" />
+         
+        </HorizontalLayout>
+        <HorizontalLayout height="100" width="400" padding="100,10,0,0" bordersize="0,0,0,0" borderstyle="0" bordercolor="0xFFEEEEEE">
+
+          <Button name="btn_StartMeeting" text="启动预约会议" tooltip="输入会议号码" font="2" width="100" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+                normalimage="file='img\btn_normal.png'"
+                hotimage="file='img\btn_hover.png'"
+                pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_JoinMeeting" text="加入会议" tooltip="输入会议号码"  font="2" width="100" padding="2,2,2,2" height="40" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+          
+        </HorizontalLayout>
+
+        <VerticalLayout height="80" width="400" padding="100,10,0,0" borderstyle ="1">
+          <!--
+          <Button name="btn_StartInstanceMeeting" text="启动即时会议" tooltip="输入会议主题和参与人id(可选)" font="3" width="200" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+          normalimage="file='img\btn_normal.png'"
+          hotimage="file='img\btn_hover.png'"
+          pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_StartMeeting" text="启动预约会议" tooltip="输入会议号码" font="3" width="200" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+                normalimage="file='img\btn_normal.png'"
+                hotimage="file='img\btn_hover.png'"
+                pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_JoinMeeting" text="加入会议" tooltip="输入会议号码"  font="3" width="200" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+
+          
+          <Button name="btn_JoinHDMeeting" text="加入高清会议" tooltip="输入会议ID"  font="3" width="200" padding="0,2,0,0" height="40" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+          
+          -->
+				 
+		  <HorizontalLayout height="30">
+			<CheckBox name="chk_video"  width="15" height="15" padding="0,9,0,0"  normalimage="file='img\checkbox_normal.png'" selectedimage="file='img\checkbox_tick_normal.png'"/>
+			<Label  text="起会/加会打开摄像头" width="185" height="30" padding="5,2,0,0"  textcolor="#FF333333" font="0"/>
+			<Control/>
+		  </HorizontalLayout>
+		  <HorizontalLayout height="30">
+			<CheckBox name="chk_audio"  width="15" height="15" padding="0,9,0,0"  normalimage="file='img\checkbox_normal.png'" selectedimage="file='img\checkbox_tick_normal.png'"/>
+			<Label  text="起会/加会打开麦克风" width="185" height="30" padding="5,2,0,0"  textcolor="#FF333333" font="0"/>
+			<Control/>
+		  </HorizontalLayout>
+        </VerticalLayout>
+      </VerticalLayout>
+
+      <HorizontalLayout name="layout_MeetingControl"  padding="20,0,0,0" height="400" visible="false">
+
+
+        <VerticalLayout width="480" padding="1,8,1,1" bordersize="1,0,1,0" borderstyle="0" bordercolor="0xFFEEEEEE">
+          <List name="userlist" bkcolor="#FFFFFFFF" padding="1,1,1,1" inset="0,0,0,0" itemshowhtml="true" vscrollbar="true" hscrollbar="true" headerbkimage="file='img\list_header_bg.png'" itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" menu="true">
+            <ListHeader height="24" menu="true">
+              <ListHeaderItem text="Id" font="1" width="150" hotimage="file='img\list_header_hot.png'" pushedimage="file='img\list_header_pushed.png'" sepimage="file='img\list_header_sep.png'" sepwidth="1"/>
+              <ListHeaderItem text="Name" font="1" width="150" hotimage="file='img\list_header_hot.png'" pushedimage="file='img\list_header_pushed.png'" sepimage="file='img\list_header_sep.png'" sepwidth="1"/>
+              <ListHeaderItem text="AccountID" font="1" width="150" hotimage="file='img\list_header_hot.png'" pushedimage="file='img\list_header_pushed.png'" sepimage="file='img\list_header_sep.png'" sepwidth="1"/>
+            </ListHeader>
+          </List>
+        </VerticalLayout>
+
+
+        <VerticalLayout width="120" padding="0,8,0,0" bordersize="0,1,1,0" borderstyle="0" bordercolor="0xFFEEEEEE">
+
+          <Button name="btn_LeaveMeeting" text="离开会议" font="0" width="100"  padding="10,10,0,0" height="30" textcolor="#FFFFFFFF"
+                normalimage="file='img\btn_normal.png'"
+                hotimage="file='img\btn_hover.png'"
+                pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_EndMeeting" text="结束会议" font="0" width="100" padding="10,6,0,0" height="30" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+
+
+          <Button name="btn_LockMeeting" text="锁定会议" font="0" width="100" padding="10,6,0,0" height="30" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+
+
+          <Button name="btn_UnLockMeeting" text="解锁会议" font="0" width="100" padding="10,6,0,0" height="30" textcolor="#FFFFFFFF"
+                 normalimage="file='img\btn_normal.png'"
+                 hotimage="file='img\btn_hover.png'"
+                 pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_Share" text="共享桌面" font="0" width="100" padding="10,6,0,0" height="30" textcolor="#FFFFFFFF"
+                normalimage="file='img\btn_normal.png'"
+                hotimage="file='img\btn_hover.png'"
+                pushedimage="file='img\btn_normal.png'"/>
+
+          <Button name="btn_StopShare" text="停止共享" font="0" width="100" padding="10,6,0,0" height="30" textcolor="#FFFFFFFF"
+              normalimage="file='img\btn_normal.png'"
+              hotimage="file='img\btn_hover.png'"
+              pushedimage="file='img\btn_normal.png'"/>
+        </VerticalLayout>
+
+
+
+      </HorizontalLayout>
+
+    </VerticalLayout>
+    <VerticalLayout height="40" bordersize="0,1,0,0" borderstyle="0" bordercolor="0xFFEEEEEE">
+      <Label name="lbl_Msg" height="20" width="640" endellipsis="true" padding="0,8,0,8" align="center" textcolor="0xFFFF0000" />
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>
