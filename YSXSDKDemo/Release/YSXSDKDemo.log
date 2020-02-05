@@ -1,13 +1,18 @@
-﻿  MainWnd.cpp
-c:\users\jiangxiaowei01\desktop\投标项目\sdk\ysxsdkdemo\mainwnd.cpp(612): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“UINT64”
-  c:\users\jiangxiaowei01\desktop\投标项目\sdk\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%llu”
-  c:\users\jiangxiaowei01\desktop\投标项目\sdk\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%I64u”
+﻿  stdafx.cpp
+c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\third\duilib\h\core\uimanager.h(56): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::EVENTTYPE_UI”的左侧
+c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\third\duilib\h\core\uimanager.h(64): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::MSGTYPE_UI”的左侧
+  MainWnd.cpp
+c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“UINT64”
+  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%llu”
+  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%I64u”
+  YSXSDKDemo.cpp
+  正在生成代码...
   正在生成代码
   0 of 1313 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-lib_json.lib(json_value.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_value.obj)”或在“C:\Users\jiangxiaowei01\Desktop\投标项目\sdk\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-lib_json.lib(json_reader.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_reader.obj)”或在“C:\Users\jiangxiaowei01\Desktop\投标项目\sdk\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-lib_json.lib(json_writer.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_writer.obj)”或在“C:\Users\jiangxiaowei01\Desktop\投标项目\sdk\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-  YSXSDKDemo.vcxproj -> C:\Users\jiangxiaowei01\Desktop\投标项目\sdk\bin\YSXSDKDemo.exe
+lib_json.lib(json_value.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_value.obj)”或在“C:\Users\Administrator\CppProjects\yxsdangjianCpp\yxsdangjianCpp\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+lib_json.lib(json_reader.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_reader.obj)”或在“C:\Users\Administrator\CppProjects\yxsdangjianCpp\yxsdangjianCpp\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+lib_json.lib(json_writer.obj) : warning LNK4099: 未找到 PDB“lib_json.pdb”(使用“lib_json.lib(json_writer.obj)”或在“C:\Users\Administrator\CppProjects\yxsdangjianCpp\yxsdangjianCpp\bin\lib_json.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  YSXSDKDemo.vcxproj -> C:\Users\Administrator\CppProjects\yxsdangjianCpp\yxsdangjianCpp\bin\YSXSDKDemo.exe
