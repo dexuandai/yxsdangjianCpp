@@ -62,6 +62,8 @@ public:
 
 	LPCTSTR GetItemText(CControlUI* pList, int iItem, int iSubItem);
 
+
+
 private:
 	void Login();
 	void Logout();
@@ -78,6 +80,12 @@ private:
 	void ShowMsg(const std::wstring& msg);
 
 private:
+
+	//----
+	CButtonUI* m_pLoginMinBtn = nullptr;
+	CButtonUI* m_pLoginCloseBtn = nullptr;
+	CButtonUI* m_pLoginBtn = nullptr;
+	//----
 
 	CEditUI* m_EditUserName;
 	CEditUI* m_EditPassword;

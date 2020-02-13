@@ -1,12 +1,7 @@
-﻿  stdafx.cpp
-c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\third\duilib\h\core\uimanager.h(56): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::EVENTTYPE_UI”的左侧
-c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\third\duilib\h\core\uimanager.h(64): warning C4091: “typedef ”: 没有声明变量时忽略“DuiLib::MSGTYPE_UI”的左侧
-  MainWnd.cpp
-c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“UINT64”
-  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%llu”
-  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(612): note: 请考虑在格式字符串中使用“%I64u”
-  YSXSDKDemo.cpp
-  正在生成代码...
+﻿  MainWnd.cpp
+c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(645): warning C4477: “sprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“UINT64”
+  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(645): note: 请考虑在格式字符串中使用“%llu”
+  c:\users\administrator\cppprojects\yxsdangjiancpp\yxsdangjiancpp\ysxsdkdemo\mainwnd.cpp(645): note: 请考虑在格式字符串中使用“%I64u”
   正在生成代码
   0 of 1313 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

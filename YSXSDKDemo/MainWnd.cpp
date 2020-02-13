@@ -148,7 +148,8 @@ LPCTSTR		MainWnd::GetWindowClassName() const
 
 CDuiString	MainWnd::GetSkinFile()
 {
-	return L"MainWnd.xml";
+	// return L"MainWnd.xml";
+	return L"LoginPage.xml";
 }
 
 void		MainWnd::InitWindow()
@@ -184,11 +185,48 @@ void		MainWnd::InitWindow()
 	}
 
 	CenterWindow();
-	SDKInit();
+	//ddx 
+	//SDKInit();  //初始化sdk
+	m_pLoginMinBtn = dynamic_cast<CButtonUI*>(m_pm.FindControl(_T("btn_login_min")));
+	m_pLoginCloseBtn = dynamic_cast<CButtonUI*>(m_pm.FindControl(_T("btn_login_close")));
+	m_pLoginBtn = dynamic_cast<CButtonUI*>(m_pm.FindControl(_T("btn_login")));
 }
 
 void MainWnd::Notify(TNotifyUI& msg)
 {
+	// ddx 点击事件
+	if (msg.sType == DUI_MSGTYPE_CLICK)
+	{
+		CDuiString strName = msg.pSender->GetName();
+		// 最小化
+		if (strName == _T("btn_login_min"))
+		{
+			SendMessage(WM_SYSCOMMAND, SC_MINIMIZE, 0);
+		}
+		//退出
+		if (strName == _T("btn_login_close"))
+		{
+			Close(); 
+		}
+		//登陆
+		if (strName == _T("loginbtn"))
+		{
+			::MessageBox(NULL, L"登录成功", L"提示", MB_OK);
+			// 新建一个登陆页面并打开
+			//MainWnd wnd2;
+			//wnd2.Create(NULL, _T("父城党建"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+			//wnd2.ShowModal();
+
+
+
+
+			this->ShowWindow(SW_HIDE); //隐藏登陆页面
+			
+		}
+	}
+	__super::Notify(msg);
+	//----------------
+
     auto senderName = msg.pSender->GetName();
     if (msg.sType == L"selectchanged")
     {
@@ -306,6 +344,7 @@ void MainWnd::OnClick(TNotifyUI& msg)
 	ShowMsg(L"测试");
 	if (controlName == L"btn_Login")
 	{
+		//ddx
 		//SDKInit();
 		Login();
 	}
@@ -1197,5 +1236,6 @@ void MainWnd::RefreshUserList()
 
 void MainWnd::ShowMsg(const std::wstring& msg)
 {
-	m_LabelMsg->SetText(msg.c_str());
+	//ddx 
+	//m_LabelMsg->SetText(msg.c_str());
 }

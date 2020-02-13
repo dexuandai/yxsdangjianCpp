@@ -49,20 +49,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="YSXSDKDemo.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="small.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="YSXSDKDemo.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <Xml Include="..\bin\Skin\MainWnd.xml" />
     <Xml Include="..\bin\Skin\Menu.xml" />
+    <Xml Include="..\bin\Skin\LoginPage.xml" />
   </ItemGroup>
 </Project>

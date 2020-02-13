@@ -176,13 +176,7 @@
     <ClCompile Include="YSXSDKDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="YSXSDKDemo.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="small.ico" />
-    <Image Include="YSXSDKDemo.ico" />
-  </ItemGroup>
-  <ItemGroup>
+    <Xml Include="..\bin\Skin\LoginPage.xml" />
     <Xml Include="..\bin\Skin\MainWnd.xml">
       <SubType>Designer</SubType>
     </Xml>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="350,450" caption="0,0,0,35" roundcorner="5,5">
+  <!-- 默认样式 -->
+  <!--<Default name="Button" value="bordersize=&quot;1&quot; bordercolor=&quot;#FF222222&quot;" />-->
+  <Font shared="true" id="1" name="微软雅黑" size="18" />
+  <VerticalLayout>
+    <!-- 标题栏 -->
+    <HorizontalLayout height="35" bkcolor="#FFFFFFFF" inset="8,8,8,0">
+      <!--<Control bkimage="logo.png" height="18" width="18" />
+      <Label text="父城党建" height="18" padding="8" font="1"/>-->
+      <Control />
+      <HorizontalLayout childpadding="5" width="45">
+        <Button name="btn_login_min" height="18" width="18" normalimage="btn_min_normal.png" hotimage="btn_min_hovered.png" pushedimage="btn_min_pushed.png" />
+        <Button name="btn_login_close" height="18" width="18" normalimage="btn_close_normal.png" hotimage="btn_close_hovered.png" pushedimage="btn_close_pushed.png" />
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <!-- 窗口内容区域 -->
+    <VerticalLayout bkcolor="#FFFFFFFF">
+      
+      <Control bkimage="fuchengdangjian.jpg" height="70" width="200" padding="75,20,0,0"/>
+      <Control height="20"/>
+      
+      <VerticalLayout>
+        <VerticalLayout height="100">
+        <HorizontalLayout>
+          <Control bkimage="account.png" height="18" width="18" padding="62,4,0,0"></Control>
+          <Edit name="usernameedit" tipvalue="帐号/手机号" maxchar="32" textpadding="5,5,5,5"  bkimage="file='images/edit_frame_normal_reversed.png' corner='1,1,1,1'" hotimage="file='images/edit_frame_hover_reversed.png' corner='1,1,1,1'" focusedimage="file='images/edit_frame_hover_reversed.png' corner='1,1,1,1'" height="30" width="200" padding="5,0,0,0"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <Control bkimage="password.png" height="18" width="18" padding="62,4,0,0"></Control>
+          <Edit name="passwordedit" tipvalue="密码" maxchar="32" password="true" textpadding="5,5,5,5" bkimage="file='images/edit_frame_normal.png' corner='1,1,1,1'" hotimage="file='images/edit_frame_hover.png' corner='1,1,1,1'" focusedimage="file='images/edit_frame_hover.png' corner='1,1,1,1'" height="30" width="200" padding="5,0,0,0"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="20" padding="65,4,0,0">
+          <Control bkimage="select_box.png" width="20" />
+          <Label text="记住密码" textcolor="#FF515151"/>
+          <Control bkimage="select_box.png" width="20"/>
+          <Label text="自动登陆" textcolor="#FF515151"/>
+        </HorizontalLayout>
+        </VerticalLayout>
+        
+        <!-- 登录按钮 -->
+        <VerticalLayout padding="0,30,0,0">
+          <Button name="loginbtn" text="登  录" padding="85,8,0,0" width="180" height="30" textcolor="#FFFFFFFF" normalimage="images/button_login_normal.png" hotimage="images/button_login_hover.png" pushedimage="images/button_login_down.png" />
+          <Label text="新用户注册" textcolor="#FF8a8a8a" padding="145,8,0,0"/>
+        </VerticalLayout>
+        
+        <!-- 说明 -->
+        <VerticalLayout>
+          <Label text="主办单位：中共宝丰县委组织部" textcolor="#FF515151" padding="95,8,0,0"/>
+          <Label text="技术支持：浪潮集团" textcolor="#FF515151" padding="115,8,0,0"/>
+        </VerticalLayout>
+        
+        
+      </VerticalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>
